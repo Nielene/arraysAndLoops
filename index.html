@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	
+	<ul id='rainbow'></ul>
+	
+	<script>
+
+		var	color = ["Blue ", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow "];
+
+		var	o = ["th", "st", "nd", "rd"];
+
+
+		for(var i = 0; i < color.length; i++){
+			if(color[0]) {
+				document.getElementById('rainbow').innerHTML +=   '<li>' + '1' + o[1]+ ' choice is ' + color[0] + '.' + '</li>';
+			}else if(color[1]) {
+				document.getElementById('rainbow').innerHTML +=   '<li>' + '2' + o[2]+ ' choice is ' + color[1] + '.' + '</li>';
+			}else if(color[2]) {
+				document.getElementById('rainbow').innerHTML +=   '<li>' + '3' + o[3]+ ' choice is ' + color[2] + '.' + '</li>';
+			}else if(color[3]) {
+				document.getElementById('rainbow').innerHTML +=   '<li>' + '4' + o[0]+ ' choice is ' + color[3] + '.' + '</li>';
+			}else if(color[4]) {
+				document.getElementById('rainbow').innerHTML +=   '<li>' + '5' + o[0]+ ' choice is ' + color[4] + '.' + '</li>';
+			}else if(color[5]) {
+				document.getElementById('rainbow').innerHTML +=   '<li>' + '6' + o[0]+ ' choice is ' + color[5] + '.' + '</li>';
+			}else if(color[6]) {
+				document.getElementById('rainbow').innerHTML +=   '<li>' + '7' + o[0]+ ' choice is ' + color[6] + '.' + '</li>';
+			}
+		}
+
+	</script>
+
+
+</body>
+</html>
+
