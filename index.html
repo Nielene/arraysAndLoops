@@ -8,21 +8,26 @@
 	<ul id='rainbow'></ul>
 	
 	<script>
-
 		var	color = ["Blue", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow"];
 		var	o = ["th", "st", "nd", "rd"];
 		
-		for(var i = 1, y = 0; i < color.length, y < color.length; i++, y++){
+		for(var i = 1; i < color.length+1; i++){
 			
 			if(o[i]) {
-				document.getElementById('rainbow').innerHTML +=   '<li>' + i + o[i]+ ' choice is ' + color[y] + '.' + '</li>';
-			}else if(o[i]) {
-				document.getElementById('rainbow').innerHTML +=   '<li>' + i + o[i]+ ' choice is ' + color[y] + '.' + '</li>';
-			}else if(o[i]) {
-				document.getElementById('rainbow').innerHTML +=   '<li>' + i + o[i]+ ' choice is ' + color[y] + '.' + '</li>';
-			}else {
-				document.getElementById('rainbow').innerHTML +=   '<li>' + i + o[0]+ ' choice is ' + color[y] + '.' + '</li>';
+				document.getElementById('rainbow').innerHTML +=   '<li>' + i + o[i]+ ' choice is ' + color[i-1] + '.' + '</li>';
+			}else{
+				document.getElementById('rainbow').innerHTML +=   '<li>' + i + o[0]+ ' choice is ' + color[i-1] + '.' + '</li>';
 			}
+			// else if(o[i]) {
+			// 	document.getElementById('rainbow').innerHTML +=   '<li>' + (i+1) + o[i+1]+ ' choice is ' + color[i] + '.' + '</li>';
+			// }
+			// else if(o[i]) {
+			// 	document.getElementById('rainbow').innerHTML +=   '<li>' + (i+1) + o[i+1]+ ' choice is ' + color[i] + '.' + '</li>';
+			// }
+			// else {
+			// 	document.getElementById('rainbow').innerHTML +=   '<li>' + (i+1) + o[0]+ ' choice is ' + color[i] + '.' + '</li>';
+			// }
+
 			// else if(color[i]) {
 			// 	document.getElementById('rainbow').innerHTML +=   '<li>' + '5' + o[0]+ ' choice is ' + color[i] + '.' + '</li>';
 			// }else if(color[i]) {
@@ -31,10 +36,7 @@
 			// 	document.getElementById('rainbow').innerHTML +=   '<li>' + '7' + o[0]+ ' choice is ' + color[i] + '.' + '</li>';
 			// }
 		}
-
 	</script>
-
-
 </body>
 </html>
 
